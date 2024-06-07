@@ -1,0 +1,113 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variáveis declarações */
+:root {
+    --color-orange: #e6630d;
+    --color-light: #ffffff;
+    --color-blue: rgb(12, 7, 39);
+    --font-body: 'Poppins', sans-serif; 
+    --border-radius: 20px;
+    --transition: .5s;
+}
+
+body {
+    font-family: var(--font-body); 
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+#botao {
+    color: #1B1B1B;
+}
+
+a#botao-cadastre.btn {
+    background-color: #509538; /* Define a cor de fundo do botão de cadastro */
+    color: var(--color-light); /* Define a cor do texto usando a variável */
+}
+
+a:hover {
+    color: azure;
+}
+
+/**********************  header *********************/
+.header-page { 
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header-menu ol {
+    display: flex;
+    gap: 15px;
+}
+
+.header-page h2 {
+    color: var(--color-light);
+    font-size: 30px;    
+}
+
+.header-span {
+    background-color: var(--color-orange);
+    padding: 5px;
+    border-radius: var(--border-radius);
+}
+/******************** fim header *******************/
+
+/******************** Hero *******************/
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.8)),
+    url(../images/iStock-1045032628.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: var(--color-light);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3vmin;
+}
+
+.hero p {
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #EEEEEE;
+    padding: 8px 35px;
+    border-radius: 2px solid var(--color-orange);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: transparent;
+}
