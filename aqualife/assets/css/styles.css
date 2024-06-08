@@ -101,7 +101,6 @@ a:hover {
 }
 
 .hero h3 {
-    line-height: 0.2; /* Espaçamento */
     font-size:2.1vmin; /* tamanho texto */
 }
 
@@ -112,13 +111,15 @@ a:hover {
 .btn {
     background-color: #EEEEEE;
     padding: 8px 35px;
-    border-radius: 2px solid var(--color-orange);
+    border-radius: 2px solid;
     border-radius: var(--border-radius);
     transition: var(--transition);
 }
 
 .btn:hover {
-    background-color: transparent;
+    background-color:#1B1B1B;
+    color: #FFFFFF !important;
+
 }
 
 /******************** sessao2 *******************/
@@ -162,7 +163,7 @@ a:hover {
 }
 
 #faça-parte {
-    background-color: var(--color-blue);
+    background-color: #2095AE;
     color: var(--color-light);
 }
 
