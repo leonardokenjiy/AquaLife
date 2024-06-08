@@ -154,9 +154,16 @@ a:hover {
     color: var (--color-blue);
     line-height: 1.2;
 }
+.sessao2-content h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var (--color-blue);
+    line-height: 1.2;
+}
 
 .sessao2-content p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 20px;
     color: var(--color-blue);
     line-height: 1.5;
@@ -174,10 +181,10 @@ a:hover {
     left: 8.5%;
     width: 30%;
     height: 100%;
-    background-image: url('../images/Logo vetor.png');
+    background-image: url('../images/logo-opaca.svg');
     background-size: cover;
     background-position: center;
-    opacity: 0.10;
+    
     z-index: 0;
 }
 
@@ -337,6 +344,56 @@ a:hover {
 }
 
 @media screen and (max-width: 430px){
+    a#botao-cadastre.btn, .btn-login{
+        display:none;
+}
+.hero h1{
+    font-size: 30px;
+}
+.hero h3, p {
+    font-size: 14px;
+}
+.header-page h2{
+    font-size: 20px;
+}
+.hero {
+    padding-left: 20px;
+}
+.sessao2 .container {
+    flex-direction: column;
+}
+
+.sessao2-content {
+    order: 2;
+    width: 100%;
+    max-width: none;
+}
+.sessao2-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #646464;
+    text-align: center;
+   
+}
+.sessao2-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #343434;
+   text-align: left;
+}
+.sessao2-image {
+    order: 1;
+    width: 430px;
+     margin: 1px 0px 0px 1px; 
+    overflow: hidden;
+}
+.hero p {
+    font: size 17px; 
+}
+a#botao-cadastre.btn {
+    display: none;
+}
     .container-top{
         width: 376px;
         height: auto;
@@ -400,4 +457,4 @@ a:hover {
     .paragraph-4 {
         font-size: 15px;
     }
-}
+} 
